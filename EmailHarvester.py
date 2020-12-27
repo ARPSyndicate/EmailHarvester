@@ -50,7 +50,7 @@ except ImportError:
   from urlparse import urlparse
 
 ################################
-
+os.chdir(sys._MEIPASS)
 
 if _platform == 'win32':
     import colorama
