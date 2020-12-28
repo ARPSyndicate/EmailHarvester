@@ -307,7 +307,7 @@ if __name__ == '__main__':
             print(red("[-] Error saving TXT file: " + e))
             
         try:
-            filename = filename.split(".")[0] + ".xml"
+            filename = filename+".xml"
             with open(filename, 'w') as out_file:
                 out_file.write('<?xml version="1.0" encoding="UTF-8"?><EmailHarvester>')
                 for email in all_emails:
